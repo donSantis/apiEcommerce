@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('prueba');
     }
+    public function blanco()
+    {
+        return view('layouts.blanco');
+    }
+
 }
