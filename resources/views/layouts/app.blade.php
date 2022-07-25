@@ -49,7 +49,11 @@
     @stack('page_css')
 </head>
 
+
 <body class="hold-transition sidebar-mini layout-fixed">
+
+
+
 <div class="wrapper">
     <!-- Main Header -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -93,14 +97,17 @@
             </li>
         </ul>
     </nav>
-    @include('layouts.navbar')
+
     <!-- Left side column. contains the logo and sidebar -->
 @include('layouts.sidebar')
+
 
 <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <section class="content">
+            @include('layouts.navbar')
             @yield('content')
+            @include('prueba')
         </section>
     </div>
 

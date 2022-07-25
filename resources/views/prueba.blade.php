@@ -1,6 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
 
 
     <!-- Swiper -->
@@ -27,4 +24,4 @@
 
 
 
-@endsection
+
