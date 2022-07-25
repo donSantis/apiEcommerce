@@ -167,6 +167,8 @@
     });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="{{ asset('js/app.js') }}" defer></script>
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @stack('third_party_scripts')
 
 @stack('page_scripts')
