@@ -24,3 +24,6 @@ Route::get('/prueba', [App\Http\Controllers\HomeController::class, 'prueba'])->n
 Route::get('/blanco', [App\Http\Controllers\HomeController::class, 'blanco'])->name('blanco');
 
 Route::resource('products', App\Http\Controllers\ProductController::class);
+
+
+Route::resource('users', App\Http\Controllers\UsersController::class);
