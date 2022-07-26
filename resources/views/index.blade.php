@@ -4,6 +4,7 @@
     @switch($contenido)
         @case('index')
             @include('products.show2')
+            @include('modal.modal')
             <h1>qwq</h1>
             @break
 
