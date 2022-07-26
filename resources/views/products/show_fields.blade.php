@@ -22,9 +22,15 @@
     <p>{{ $product->price }}</p>
 </div>
 
-<!-- State Field -->
+<!-- Image Field -->
 <div class="col-sm-12">
-    {!! Form::label('state', 'State:') !!}
-    <p>{{ $product->state }}</p>
+    {!! Form::label('image', 'Image:') !!}
+    <p>{{ $product->image }}</p>
+</div>
+
+<!-- State2 Field -->
+<div class="col-sm-12">
+    {!! Form::label('state2', 'State2:') !!}
+    <p>{{ $product->state2 }}</p>
 </div>
 

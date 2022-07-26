@@ -22,11 +22,17 @@
     {!! Form::number('price', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- State Field -->
+<!-- Image Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('image', 'Image:') !!}
+    {!! Form::text('image', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+</div>
+
+<!-- State2 Field -->
 <div class="form-group col-sm-6">
     <div class="form-check">
-        {!! Form::hidden('state', 0, ['class' => 'form-check-input']) !!}
-        {!! Form::checkbox('state', '1', null, ['class' => 'form-check-input']) !!}
-        {!! Form::label('state', 'State', ['class' => 'form-check-label']) !!}
+        {!! Form::hidden('state2', 0, ['class' => 'form-check-input']) !!}
+        {!! Form::checkbox('state2', '1', null, ['class' => 'form-check-input']) !!}
+        {!! Form::label('state2', 'State2', ['class' => 'form-check-label']) !!}
     </div>
 </div>

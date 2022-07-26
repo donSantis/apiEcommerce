@@ -6,7 +6,8 @@
         <th>Title</th>
         <th>Description</th>
         <th>Price</th>
-        <th>State</th>
+        <th>Image</th>
+        <th>State2</th>
             <th colspan="3">Action</th>
         </tr>
         </thead>
@@ -17,7 +18,8 @@
             <td>{{ $product->title }}</td>
             <td>{{ $product->description }}</td>
             <td>{{ $product->price }}</td>
-            <td>{{ $product->state }}</td>
+            <td>{{ $product->image }}</td>
+            <td>{{ $product->state2 }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['products.destroy', $product->id_product], 'method' => 'delete']) !!}
                     <div class='btn-group'>

@@ -18,7 +18,8 @@ class Product extends Migration
             $table->string('title');
             $table->string('description');
             $table->integer('price');
-            $table->boolean('state');
+            $table->string('image');
+            $table->boolean('state2');
             $table->timestamp('deleted_at')->nullable();
             $table->timestamps();
         });

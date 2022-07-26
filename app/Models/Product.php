@@ -9,14 +9,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class Product
  * @package App\Models
- * @version July 25, 2022, 12:25 am UTC
+ * @version July 26, 2022, 4:51 am UTC
  *
  * @property \App\Models\User $idUser
  * @property integer $id_user
  * @property string $title
  * @property string $description
  * @property integer $price
- * @property boolean $state
+ * @property string $image
+ * @property boolean $state2
  */
 class Product extends Model
 {
@@ -40,7 +41,8 @@ class Product extends Model
         'title',
         'description',
         'price',
-        'state'
+        'image',
+        'state2'
     ];
 
     /**
@@ -54,7 +56,8 @@ class Product extends Model
         'title' => 'string',
         'description' => 'string',
         'price' => 'integer',
-        'state' => 'boolean'
+        'image' => 'string',
+        'state2' => 'boolean'
     ];
 
     /**
@@ -67,7 +70,8 @@ class Product extends Model
         'title' => 'required|string|max:255',
         'description' => 'required|string|max:255',
         'price' => 'required|integer',
-        'state' => 'required|boolean',
+        'image' => 'required|string|max:255',
+        'state2' => 'required|boolean',
         'deleted_at' => 'nullable',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'

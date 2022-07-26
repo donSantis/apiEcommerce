@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Product;
+use Illuminate\Support\Facades\DB;
 
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -26,9 +27,19 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function prueba()
+    public function index2()
     {
-        return view('prueba');
+        $products =  DB::table('product')->get();
+
+
+        $contenido = 'index';
+        $titulo = 'Inicio';
+
+        return view('index', [
+            'products' => $products,
+            'contenido' => $contenido,
+            'titulo' => $titulo,
+        ]);
     }
     public function blanco()
     {
