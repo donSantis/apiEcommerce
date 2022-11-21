@@ -5,7 +5,7 @@
 Laravel Boilerplate with [AdminLTE](https://adminlte.io/) Theme with [InfyOm Laravel Generator](https://github.com/InfyOmLabs/laravel-generator).
 Following things are ready to be used directly with AdminLTE Theme.
 
-- Signup
+- Signuppp
 - Login
 - Forgot Password
 - Password Reset
